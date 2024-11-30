@@ -82,7 +82,7 @@ def play_game():
         print_board(board)
         
         if player == 'O':
-            row, col = map(int, input("Enter your move (row and column): ").split())
+            row, col = map(int, input("Enter your move (row space column): ").split())
             if board[row][col] == ' ':
                 board[row][col] = 'O'
                 player = 'X'
